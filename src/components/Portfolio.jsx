@@ -1,33 +1,28 @@
 import React from 'react'
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import newsTicker from "../assets/portfolio/newsTicker.jpg";
+import taKape from "../assets/portfolio/taKape.jpg";
+import theSis from "../assets/portfolio/theSis.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-// import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
 const Portfolio = () => {
 
     const portfolios = [
         {
             id: 1,
-            src: arrayDestruct
+            src: newsTicker,
+            name: "Live News Ticker"
         },
         {
             id: 2,
-            src: reactParallax
-        }, {
-            id: 3,
-            src: navbar
-        }
-        , {
-            id: 4,
-            src: reactSmooth
-        }
-        , {
-            id: 5,
-            src: installNode
+            src: taKape,
+            name: "Takape"
         },
+        {
+            id: 3,
+            src: theSis,
+            name: "Inventory and Temperature Monitor for Bio-Freezers"
+        },
+         
     ]
 
     return (
@@ -45,7 +40,7 @@ const Portfolio = () => {
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
 
                 {
-                    portfolios.map(({id, src}) => (
+                    portfolios.map(({id, src, name}) => (
 
                         <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
 
@@ -53,8 +48,8 @@ const Portfolio = () => {
 
                         <div className="flex items-center justify-center">
 
-                            <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
-                            <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>
+                            <p className="font-bold px-6 py-3 m-4 duration-200 hover:scale-105">{name}</p>
+                            {/* <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button> */}
                         </div>
                     </div>
 
