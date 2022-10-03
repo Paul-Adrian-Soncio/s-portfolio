@@ -9,17 +9,20 @@ const Portfolio = () => {
         {
             id: 1,
             src: newsTicker,
-            name: "Live News Ticker"
+            name: "Live News Ticker",
+            href: 'https://spiffy-alpaca-805a55.netlify.app'
         },
         {
             id: 2,
             src: taKape,
-            name: "Takape"
+            name: "Takape",
+            href: 'https://takape-vhlum.mongodbstitch.com/#/login'
         },
         {
             id: 3,
             src: theSis,
-            name: "Inventory and Temperature Monitor for Bio-Freezers"
+            name: "Inventory and Temperature Monitor for Bio-Freezers",
+            href: 'https://github.com/illunaaa-PA/thesis-package'
         },
          
     ]
@@ -39,7 +42,7 @@ const Portfolio = () => {
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
 
                 {
-                    portfolios.map(({id, src, name}) => (
+                    portfolios.map(({id, src, name, href}) => (
 
                         <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
 
@@ -47,8 +50,9 @@ const Portfolio = () => {
 
                         <div className="flex items-center justify-center">
 
-                            <p className="font-bold px-6 py-3 m-4 duration-200 hover:scale-105">{name}</p>
-                            {/* <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button> */}
+                        <a href={href} target="_blank" rel="noreferrer">
+                            <button className="font-bold px-6 py-3 m-4 duration-200 hover:scale-105">{name}</button>
+                        </a>
                         </div>
                     </div>
 
