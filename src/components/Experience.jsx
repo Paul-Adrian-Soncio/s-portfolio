@@ -4,7 +4,13 @@ import css from "../assets/css.png"
 import javascript from "../assets/javascript.png"
 import reactImage from "../assets/react.png"
 import nextjs from "../assets/nextjs.png"
+import git from "../assets/git.png"
+import html from "../assets/html.png"
+import node from "../assets/node.png"
+import sql from "../assets/sql.png"
+import arduino from "../assets/arduino.png"
 import github from "../assets/github.png"
+import netlify from "../assets/netlify.png"
 
 
 const Experience = () => {
@@ -42,9 +48,45 @@ const Experience = () => {
         },
         {
             id: 6,
+            src: git,
+            title: "Git",
+            style: "shadow-orange-400"
+        },
+        {
+            id: 7,
+            src: html,
+            title: "HTML",
+            style: "shadow-orange-500"
+        },
+        {
+            id: 8,
+            src: node,
+            title: "Node",
+            style: "shadow-green-400"
+        },
+        {
+            id: 9,
+            src: sql,
+            title: "MySQL",
+            style: "shadow-cyan-400"
+        },
+        {
+            id: 10,
+            src: arduino,
+            title: "Arduino",
+            style: "shadow-cyan-500"
+        },
+        {
+            id: 11,
             src: github,
             title: "GitHub",
-            style: "shadow-gray-400"
+            style: "shadow-gray-500"
+        },
+        {
+            id: 12,
+            src: netlify,
+            title: "Netlify",
+            style: "shadow-cyan-300"
         },
     ]
 

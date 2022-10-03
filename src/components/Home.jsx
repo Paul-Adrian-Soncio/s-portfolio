@@ -29,15 +29,16 @@ const Home = () => {
                         Paul Adrian Soncio
                     </h2>
 
-                    <p className="text-gray-500 py-4 max-w-md">
+                    <p className="text-gray-400 py-4 max-w-md">
                         I'm a fresh graduate Information Technology student from West Visayas State University,
                         Iloilo City, Philippines. Currently, I love to work on web applications using technologies
                         like React, Tailwind and Next JS.
                     </p>
 
                     <div className="gap-4 pt-4 flex flex-wrap">
-                        <Link to="portfolio" smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r
-                         from-cyan-500 to-blue-500 cursor-pointer">
+                        
+                        <Link to="portfolio" smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-transparent
+                         hover:bg-gradient-to-r from-cyan-500 to-blue-500 border border-cyan-500 hover:border-transparent cursor-pointer">
                             Portfolio
                             <span className="group-hover:rotate-90 duration-300">
                                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
