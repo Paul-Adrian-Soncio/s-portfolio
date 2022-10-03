@@ -2,7 +2,6 @@ import React from 'react'
 import newsTicker from "../assets/portfolio/newsTicker.jpg";
 import taKape from "../assets/portfolio/taKape.jpg";
 import theSis from "../assets/portfolio/theSis.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 
 const Portfolio = () => {
 
