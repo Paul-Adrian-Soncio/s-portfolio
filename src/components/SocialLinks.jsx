@@ -50,7 +50,7 @@ const socialLinks = () => {
 
     return (
 
-        <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+        <div className="hidden lg:flex flex-col top-[35%] left-0 fixed z-10">
 
             <ul>
 
