@@ -53,7 +53,7 @@ const Home = () => {
                         Hi 👋 I'm
                     </motion.p>
 
-                    <motion.h2 variants={item} className="text-4xl sm:text-7xl font-bold text-white">
+                    <motion.h2 variants={item} className="text-4xl sm:text-6xl font-bold text-white">
                         Paul Adrian
                     </motion.h2>
 
