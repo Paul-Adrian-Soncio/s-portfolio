@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import aboutImage from '../assets/aboutImg.png';
 
 const About = () => {
 
@@ -8,7 +9,7 @@ const About = () => {
         <div name="about" className="w-full h-screen bg-gradient-to-b from-gray-800
         to-black text-white z-10">
 
-            <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+            <div className="max-w-screen-lg p-4 mx-auto flex flex-col pt-60 justify-center w-full h-full">
 
                 <div className="pb-1">
                     <motion.p
@@ -24,52 +25,92 @@ const About = () => {
 
                 </div>
 
-                <motion.p
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{
-                        delay: 0.5,
-                        type: "spring",
-                        bounce: 0.7,
-                        duration: 3,
-                    }} className="text-xl mt-10">
-                    Hello! I am Paul Adrian D. Soncio, 23 years of age, and I reside in Iloilo, Philippines.
-                </motion.p>
+                <div className="flex flex-col sm:flex-row gap-16 mt-10 ">
 
-                <br />
+                    <img src={aboutImage} alt="my profile" className="rounded-2xl
+                    mx-auto  w-72 md:w-72" />
 
-                <motion.p
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{
-                        delay: 1,
-                        type: "spring",
-                        bounce: 0.7,
-                        duration: 3,
-                    }} className="text-xl">
-                    I'm a fresh grauate IT student looking for experience and chances to grow. Currently I enjoy working on
-                    a mix of both front and back end web development. I also enjoy handling and managing hardware systems.
-                </motion.p>
+                    <div>
+                        <motion.h1
+                            initial={{ y: 20, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                delay: 0.5,
+                                type: "spring",
+                                bounce: 0.7,
+                                duration: 3,
+                            }} className="text-4xl font-bold text mt-10">
+                            Paul Adrian D. Soncio
 
-                <br />
+                        </motion.h1>
 
-                <motion.p
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{
-                        delay: 1.5,
-                        type: "spring",
-                        bounce: 0.7,
-                        duration: 3,
-                    }} className="text-xl">
-                    My hobbies include gaming and photography. It was my love for gaming which pushed me to pursue
-                    learning in the tech related space. The modern world always amazes me with it's growth in technology.
-                    I often catch myself breaking down how everything works. It's my curious mind that drives me to learn and
-                    grow my skills as a developer.
-                </motion.p>
+                        <br />
+
+                        <motion.p
+                            initial={{ y: 20, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                delay: 1,
+                                type: "spring",
+                                bounce: 0.7,
+                                duration: 3,
+                            }} className="text-base">
+                            I'm a fresh grauate IT student looking for experience and chances to grow. Currently I enjoy working on
+                            a mix of both front and back end web development. I also enjoy handling and managing hardware systems.
+                        </motion.p>
+
+                        <br />
+
+                        <motion.p
+                            initial={{ y: 20, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                delay: 1.5,
+                                type: "spring",
+                                bounce: 0.7,
+                                duration: 3,
+                            }} className="text-base">
+                            My hobbies include gaming and photography. It was my love for gaming which pushed me to pursue
+                            learning in the tech related space. The modern world always amazes me with it's growth in technology.
+                            I often catch myself breaking down how everything works. It's my curious mind that drives me to learn and
+                            grow my skills as a developer.
+                        </motion.p>
+
+                        <div className="flex gap-5">
+
+                            <p className="group mt-14 p-1 px-3 rounded-full bg-transparent border border-cyan-500
+                                transition ease-in-out hover:-translate-y-1 duration-300 cursor-default">
+                                 $gamer
+                            </p>
+
+                            <p className="group mt-14 p-1 px-3 rounded-full bg-transparent border border-cyan-500
+                                transition ease-in-out hover:-translate-y-1 duration-300 cursor-default">
+                                 $codes
+                            </p>
+
+                            <p className="group mt-14 p-1 px-3 rounded-full bg-transparent border border-cyan-500
+                                transition ease-in-out hover:-translate-y-1 duration-300 cursor-default">
+                                 $developer
+                            </p>
+
+                            <p className="group mt-14 p-1 px-3 rounded-full bg-transparent border border-cyan-500
+                                transition ease-in-out hover:-translate-y-1 duration-300 cursor-default">
+                                 $mechanical keyboard
+                            </p>
+
+                            <p className="group mt-14 p-1 px-3 rounded-full bg-transparent border border-cyan-500
+                                transition ease-in-out hover:-translate-y-1 duration-300 cursor-default">
+                                 $coffee
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 

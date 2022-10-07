@@ -15,21 +15,42 @@ const NavBar = () => {
         },
         {
             id: 2,
-            link: 'about'
-        },
-        {
-            id: 3,
             link: 'portfolio'
         },
         {
-            id: 4,
+            id: 3,
             link: 'experience'
+        },
+        {
+            id: 4,
+            link: 'about'
         },
         {
             id: 5,
             link: 'contact'
         },
     ]
+
+    const list = {
+        hidden: {},
+        show: {
+          transition: {
+            staggerChildren: 0.5
+          }
+        }
+      };
+      
+    const item = {
+        hidden: { y: 50, opacity: 0 },
+        show: { 
+            y: 0, opacity: 1, 
+            transition: {
+                type: "spring",
+                bounce: 0.2,
+                duration: 1,
+            } 
+        }
+    };
 
     return (
         <div className="flex justify-between items-center
@@ -47,26 +68,32 @@ const NavBar = () => {
                 }} src={illuna} alt="logo" className="ml-2 h-20 w-100" />
             </div>
 
-            <ul className="hidden md:flex z-20 mt-14 mr-20">
+            <motion.ul className="hidden md:flex z-20 mt-14 mr-20"  
+                initial="hidden"
+                animate="show"
+                variants={list}
+            >
                 {links.map(({ id, link }) => (
 
                     <motion.li 
-                    initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{
-                    delay: 1,
-                    type: "spring",
-                    bounce: 0.7,
-                    duration: 2,
-                  }} key={id} className="px-4 cursor-pointer capitalize font-medium
-             text-gray-500 hover:scale-105 duration-200 z-20">
+                    // initial={{ y: 20, opacity: 0 }}
+                    // animate={{ y: 0, opacity: 1 }}
+                    // transition={{
+                    //     delay: 1,
+                    //     type: "spring",
+                    //     bounce: 0.7,
+                    //     duration: 2,
+                    // }} 
+                    variants={item} 
+                    key={id} className="px-4 cursor-pointer capitalize font-medium
+                    text-gray-500 hover:scale-105 hover:text-white duration-200 z-20">
 
                         <Link to={link} smooth duration={500}> {link} </Link>
 
                     </motion.li>
 
                 ))}
-            </ul>
+            </motion.ul>
 
             <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-30
          text-gray-500 md:hidden">

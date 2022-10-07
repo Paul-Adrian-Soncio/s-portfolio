@@ -39,7 +39,7 @@ const Portfolio = () => {
     ]
 
     return (
-        <div name="portfolio" className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full z-10">
+        <div name="portfolio" className="bg-gradient-to-b from-gray-800 to-black w-full text-white h-full z-10">
 
             <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full z-10">
 
@@ -56,7 +56,7 @@ const Portfolio = () => {
 
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">Portfolio</p>
 
-                    <p className="py-6">Check out some of my work right here</p>
+                    <p className="py-6 text-cyan-500">Check out some of my work right here</p>
                 </motion.div>
 
                 <motion.div
@@ -73,13 +73,13 @@ const Portfolio = () => {
                     {
                         portfolios.map(({ id, src, name, href, desc, stack, type }) => (
 
-                            <div key={id} className="flex pt-20 gap-10">
+                            <div key={id} className="flex sm:flex-row flex-col pt-20 gap-10">
 
-                                <div className="w-128 h-128">
+                                <div className="w-64 sm:w-128 h-36 sm:h-128">
                                     <img src={src} alt="" className="border-2 border-white object-cover rounded-md" />
                                 </div>
 
-                                <div className="flex flex-col w-128 h-128 whitespace-pre-wrap">
+                                <div className="flex flex-col w-64 sm:w-128 h-128 whitespace-pre-wrap">
 
                                     <p className="mb-4 text-base text-gray-300 md:text-lg">{type}</p>
 
@@ -99,7 +99,7 @@ const Portfolio = () => {
                                             <span className="group-hover:scale-75 duration-300">
                                                 <BsBoxArrowUpRight size={25} className="ml-1 w-full" />
                                             </span>
-                                            
+
                                         </button>
                                     </a>
 
