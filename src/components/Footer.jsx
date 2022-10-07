@@ -17,7 +17,7 @@ const Footer = () => {
 
                         <img to="Home" onClick={() => {
                             scroll.scrollToTop();
-                        }} src={illuna} alt="logo" className="h-20 w-100" />
+                        }} src={illuna} alt="logo" className="h-20 w-100 cursor-pointer" />
 
                         </div>
 
