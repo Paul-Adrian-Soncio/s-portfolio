@@ -27,16 +27,16 @@ const About = () => {
 
                 <div className="flex flex-col sm:flex-row gap-16 mt-10 ">
 
-                    <motion.img src={aboutImage} alt="my profile" 
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{
-                        delay: 0.5,
-                        type: "spring",
-                        bounce: 0.7,
-                        duration: 3,
-                    }} className="rounded-2xl mx-auto  w-72 md:w-72" />
+                    <motion.img src={aboutImage} alt="my profile"
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            delay: 0.5,
+                            type: "spring",
+                            bounce: 0.7,
+                            duration: 3,
+                        }} className="rounded-2xl mx-auto  w-72 md:w-72" />
 
                     <div>
                         <motion.h1
@@ -87,40 +87,40 @@ const About = () => {
                             grow my skills as a developer.
                         </motion.p>
 
-                        <motion.div 
-                        initial={{ y: 20, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{
-                            delay: 2.0,
-                            type: "spring",
-                            bounce: 0.7,
-                            duration: 3,
-                        }} className="flex gap-5">
+                        <motion.div
+                            initial={{ y: 20, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                delay: 2.0,
+                                type: "spring",
+                                bounce: 0.7,
+                                duration: 3,
+                            }} className="flex gap-5">
 
                             <p className="group mt-14 p-1 px-3 rounded-full bg-transparent border border-cyan-500
                                 transition ease-in-out hover:-translate-y-1 duration-300 cursor-default">
-                                 $gamer
+                                $gamer
                             </p>
 
                             <p className="group mt-14 p-1 px-3 rounded-full bg-transparent border border-cyan-500
                                 transition ease-in-out hover:-translate-y-1 duration-300 cursor-default">
-                                 $codes
+                                $codes
                             </p>
 
                             <p className="group mt-14 p-1 px-3 rounded-full bg-transparent border border-cyan-500
                                 transition ease-in-out hover:-translate-y-1 duration-300 cursor-default">
-                                 $developer
+                                $developer
                             </p>
 
                             <p className="group mt-14 p-1 px-3 rounded-full bg-transparent border border-cyan-500
                                 transition ease-in-out hover:-translate-y-1 duration-300 cursor-default">
-                                 $mechanical keyboard
+                                $mechanical keyboard
                             </p>
 
                             <p className="group mt-14 p-1 px-3 rounded-full bg-transparent border border-cyan-500
                                 transition ease-in-out hover:-translate-y-1 duration-300 cursor-default">
-                                 $coffee
+                                $coffee
                             </p>
 
                         </motion.div>
