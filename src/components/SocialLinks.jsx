@@ -42,7 +42,7 @@ const socialLinks = () => {
                     Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '/PAUL-ADRIAN-SONCIO-RESUME.pdf',
+            href: '/Paul-Adrian_Resume.pdf',
             style: 'rounded-br-md',
             download: true,
         },

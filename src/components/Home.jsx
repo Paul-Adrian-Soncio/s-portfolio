@@ -9,7 +9,7 @@ const Home = () => {
 
     const links = [
         {
-            href: '/PAUL-ADRIAN-SONCIO-RESUME.pdf',
+            href: '/Paul-Adrian_Resume.pdf',
             download: true,
         },
     ]
@@ -58,9 +58,9 @@ const Home = () => {
                     </motion.h2>
 
                     <motion.p variants={item} className="text-gray-400 py-4 max-w-md">
-                        I'm a fresh graduate Information Technology student from West Visayas State University,
-                        Iloilo City, Philippines. Currently, I love to work on web applications using technologies
-                        like React, Tailwind and Next JS.
+                    I am an Information Technology professional with over two years of experience in web development. 
+                    I specialize in building modern web applications using technologies like React, Tailwind CSS, and Next.js, 
+                    and I remain eager to embrace new learning opportunities to further enhance my skills.
                     </motion.p>
 
                     <motion.div variants={item} className="gap-4 pt-4 flex flex-wrap">

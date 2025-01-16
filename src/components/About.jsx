@@ -65,8 +65,9 @@ const About = () => {
                                 bounce: 0.7,
                                 duration: 3,
                             }} className="text-base">
-                            I'm a fresh grauate IT student looking for experience and chances to grow. Currently I enjoy working on
-                            a mix of both front and back end web development. I also enjoy handling and managing hardware systems.
+                            Never thought of the day that I would be working in this industry. Here I am, a few years in deep and I'm still eager to learn.
+                            Experience and stubbornness is always the key for my growth. Comparing me now to how I was before when I started, I can comfortably
+                            say that I grew substantially, but as days, months, and years pass, my eagerness to improve also continues to grow. 
                         </motion.p>
 
                         <br />
