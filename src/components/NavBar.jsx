@@ -65,7 +65,7 @@ const NavBar = () => {
                   type: "spring",
                   bounce: 0.7,
                   duration: 2,
-                }} src={illuna} alt="logo" className="h-20 w-100" />
+                }} src={illuna} alt="logo" className="h-20 w-100 pl-0 md:pl-5" />
             </div>
 
             <motion.ul className="hidden md:flex z-20 mt-14 mr-20"  
