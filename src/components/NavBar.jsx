@@ -54,8 +54,8 @@ const NavBar = () => {
 
     return (
         <div className="flex justify-between items-center
-    w-full h-20 px-4 text-white bg-black z-20">
-            <div className="mt-5 ml-5">
+    w-full h-20 px-2 text-white bg-black z-20">
+            <div className="mt-5">
                 {/* <h1 className="text-5xl font-signature ml-2">illuna</h1> */}
                 <motion.img 
                 initial={{ y: 20, opacity: 0 }}
@@ -65,7 +65,7 @@ const NavBar = () => {
                   type: "spring",
                   bounce: 0.7,
                   duration: 2,
-                }} src={illuna} alt="logo" className="ml-2 h-20 w-100" />
+                }} src={illuna} alt="logo" className="h-20 w-100" />
             </div>
 
             <motion.ul className="hidden md:flex z-20 mt-14 mr-20"  
