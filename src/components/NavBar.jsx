@@ -54,7 +54,7 @@ const NavBar = () => {
 
     return (
         <div className="flex justify-between items-center
-    w-full h-20 px-2 text-white bg-black z-20">
+    w-full h-20 px-2 pb-5 text-white bg-black z-20">
             <div className="mt-5">
                 {/* <h1 className="text-5xl font-signature ml-2">illuna</h1> */}
                 <motion.img 
@@ -95,7 +95,7 @@ const NavBar = () => {
                 ))}
             </motion.ul>
 
-            <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-30
+            <div onClick={() => setNav(!nav)} className="cursor-pointer pr-5 pt-6 z-30
          text-gray-500 md:hidden">
 
                 {nav ? <FaTimes size={30} /> : <FaBars size={30} />}

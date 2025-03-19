@@ -9,7 +9,7 @@ const Home = () => {
 
     const links = [
         {
-            href: '/Paul-Adrian_Resume.pdf',
+            href: '/Resume_Paul.pdf',
             download: true,
         },
     ]
