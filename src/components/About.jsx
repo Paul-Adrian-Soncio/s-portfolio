@@ -6,10 +6,10 @@ const About = () => {
 
     return (
 
-        <div name="about" className="w-full h-screen bg-gradient-to-b from-gray-800
+        <div name="about" className="w-full  bg-gradient-to-b from-gray-800
         to-black text-white z-10">
 
-            <div className="max-w-screen-lg p-4 mx-auto flex flex-col pt-60 justify-center w-full h-full">
+            <div className="max-w-screen-lg p-4 mx-auto flex flex-col sm:pt-32 pt-128 justify-center w-full">
 
                 <div className="pb-1">
                     <motion.p
@@ -88,7 +88,7 @@ const About = () => {
                             grow my skills as a developer.
                         </motion.p>
 
-                        <motion.div
+                        {/* <motion.div
                             initial={{ y: 20, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             viewport={{ once: true }}
@@ -124,7 +124,7 @@ const About = () => {
                                 $coffee
                             </p>
 
-                        </motion.div>
+                        </motion.div> */}
 
                     </div>
 

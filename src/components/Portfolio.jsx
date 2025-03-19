@@ -41,7 +41,7 @@ const Portfolio = () => {
     return (
         <div name="portfolio" className="bg-gradient-to-b from-gray-800 to-black w-full text-white h-full z-10">
 
-            <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full z-10">
+            <div className="max-w-screen-lg px-4 py-10 mx-auto flex flex-col justify-center w-full h-full z-10">
 
                 <motion.div
                     initial={{ y: 20, opacity: 0 }}
@@ -79,7 +79,7 @@ const Portfolio = () => {
                                     <img src={src} alt="" className="border-2 border-white object-cover rounded-md" />
                                 </div>
 
-                                <div className="flex flex-col w-64 sm:w-128 h-128 whitespace-pre-wrap">
+                                <div className="flex flex-col w-64 sm:w-128 whitespace-pre-wrap">
 
                                     <p className="mb-4 text-base text-gray-300 md:text-lg">{type}</p>
 

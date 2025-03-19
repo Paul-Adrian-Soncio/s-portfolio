@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <main>
     
       <NavBar />
       <Home />
@@ -19,7 +19,7 @@ function App() {
       <Contact />
       <Footer />
       <SocialLinks />
-    </div>
+      </main>
   );
 }
 

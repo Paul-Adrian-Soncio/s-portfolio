@@ -93,9 +93,9 @@ const Experience = () => {
 
     return (
 
-        <div name="experience" className=" bg-gradient-to-b from-black to-gray-800 w-full h-screen z-10">
+        <div name="experience" className=" bg-gradient-to-b from-black to-gray-800 w-full h-screen z-10 py-10">
 
-            <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+            <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full  text-white">
 
                 <motion.div
                 initial={{ y: 20, opacity: 0 }}

@@ -55,7 +55,7 @@ const NavBar = () => {
     return (
         <div className="flex justify-between items-center
     w-full h-20 px-4 text-white bg-black z-20">
-            <div className="mt-14 ml-20">
+            <div className="mt-5 ml-5">
                 {/* <h1 className="text-5xl font-signature ml-2">illuna</h1> */}
                 <motion.img 
                 initial={{ y: 20, opacity: 0 }}
